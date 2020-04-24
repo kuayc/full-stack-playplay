@@ -13,7 +13,7 @@ CREATE TABLE posts
   pid SERIAL PRIMARY KEY,
   title VARCHAR(100),
   body VARCHAR(1000),
-  search_vector TSVECTOR,
+  -- search_vector TSVECTOR,
   user_id INT REFERENCES users(uid),
   author VARCHAR REFERENCES users(username),
   date_created TIMESTAMP,
